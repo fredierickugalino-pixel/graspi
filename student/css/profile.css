@@ -1,0 +1,224 @@
+@import url("../../css/dashboard.css");/* Independent styling for student/profile.php. */
+body.student-profile-copy-page { min-height: 100vh; background: #edf4f2; color: #333; }
+.student-profile-copy-page .topbar { background: #fff; border-color: #e5e8e7; }
+.student-profile-copy-page .brand { color: #174c65; }
+.student-profile-copy-page .brand small { color: #6d7c82; }
+.student-profile-copy-page .dashboard { width: min(1200px, calc(100% - 48px)); margin: 28px auto 50px; padding: 0; }
+.teacher-profile-page .profile-copy-dashboard { padding-top: 22px; }
+.teacher-profile-page .profile-copy-hero { align-items: center; }
+.profile-copy-hero { display: grid; grid-template-columns: minmax(245px, 0.34fr) minmax(0, 1fr); gap: 24px; align-items: start; width: 100%; margin: 0 auto 24px; padding: 0; }
+.profile-copy-sidebar { display: grid; gap: 18px; min-width: 0; }
+.profile-copy-photo { display: block; width: 124px; height: 124px; border-radius: 18px; object-fit: cover; background: #e5e7e8; }
+.profile-copy-avatar-column { display: grid; justify-items: center; width: 100%; padding: 24px 20px; border: 1px solid #e7eeeb; border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(31, 73, 56, .05); }
+.profile-copy-avatar-name { margin-top: 13px; text-align: center; }
+.profile-copy-avatar-name h2 { margin: 0 0 5px; color: #263d34; font-size: 19px; }
+.profile-copy-avatar-name p { margin: 0; color: #718078; font-size: 12px; }
+.profile-copy-family-contact { min-width: 0; padding: 21px; border: 1px solid #e7eeeb; border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(31, 73, 56, .05); }
+.profile-copy-family-contact h2 { margin: 0 0 16px; color: #35473e; font-size: 16px; }
+.profile-copy-family-contact dl { display: grid; gap: 14px; margin: 0; }
+.profile-copy-family-contact dl div { display: grid; gap: 4px; }
+.profile-copy-family-contact dt { color: #4a765c; font-size: 12px; font-weight: 700; }
+.profile-copy-family-contact dd { margin: 0; overflow-wrap: anywhere; color: #3d4345; font-size: 13px; }
+.profile-copy-actions { display: grid; width: 100%; gap: 8px; margin-top: 18px; }
+.profile-copy-actions form { margin: 0; }
+.profile-copy-action-button { display: flex; width: 100%; min-height: 36px; align-items: center; justify-content: center; padding: 7px 10px; border: 0; background: #17683f; color: #fff; font: 700 12px Arial, sans-serif; text-align: center; cursor: pointer; }
+.profile-copy-action-button:hover { background: #105633; }
+.profile-copy-action-button input[type="file"] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+.teacher-profile-page .password-box { position: relative; margin-top: 6px; }
+.teacher-profile-page .password-box input { width: 100%; padding-right: 42px; }
+.teacher-profile-page .password-toggle { position: absolute; top: 50%; right: 9px; display: grid; width: 28px; height: 28px; padding: 4px; transform: translateY(-50%); place-items: center; border: 0; background: transparent; color: #187245; cursor: pointer; }
+.teacher-profile-page .password-toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.teacher-profile-page .password-toggle .eye-slash { display: none; }
+.teacher-profile-page .password-toggle.is-visible .eye-slash { display: block; }
+.teacher-profile-page .password-toggle:focus-visible { outline: 2px solid #23804b; outline-offset: 2px; border-radius: 4px; }
+body.dark-mode.teacher-profile-page .password-toggle { color: #79c594; }
+.teacher-details-complete { width: auto; min-width: 170px; margin: 18px 0 0 auto; padding-inline: 16px; }
+.teacher-profile-page .dashboard-form-modal .password-form select,
+.teacher-profile-page .dashboard-form-modal .password-form textarea { box-sizing: border-box; display: block; width: 100%; margin-top: 7px; padding: 10px 11px; border: 1px solid #d0d9d2; border-radius: 6px; background: #fff; color: #24372d; font: 13px Arial, Helvetica, sans-serif; }
+.teacher-profile-page .dashboard-form-modal .password-form select { min-height: 40px; }
+.teacher-profile-page .dashboard-form-modal .password-form textarea { resize: vertical; }
+.teacher-profile-page .dashboard-form-modal .password-form select:focus,
+.teacher-profile-page .dashboard-form-modal .password-form textarea:focus { outline: 2px solid #cce7d4; border-color: #23804b; }
+body.dark-mode.teacher-profile-page .dashboard-form-modal .password-form select,
+body.dark-mode.teacher-profile-page .dashboard-form-modal .password-form textarea { border-color: #365342; background: #17231b; color: #e1ebe4; }
+@media (max-width: 480px) { .teacher-details-complete { width: 100%; } }
+.profile-copy-intro { min-width: 0; padding: 24px; border: 1px solid #e7eeeb; border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(31, 73, 56, .05); }
+.profile-copy-basic-panel { width: 100%; margin: 0; padding: 20px; border: 1px solid #edf1ef; border-radius: 12px; background: #fbfcfb; }
+.profile-copy-intro h2 { margin: 0 0 6px; color: #263d34; font-size: 23px; }
+.profile-copy-intro > p { margin: 0 0 20px; color: #718078; font-size: 13px; }
+.profile-copy-summary-card { min-width: 0; padding: 21px; border: 1px solid #e7eeeb; border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(31, 73, 56, .05); }
+.profile-copy-summary-card > h2 { margin: 0 0 17px; color: #35473e; font-size: 16px; }
+.profile-copy-summary { display: grid; gap: 16px; margin: 0; }
+.profile-copy-summary div { display: grid; grid-template-columns: 18px minmax(80px, .8fr) minmax(0, 1.2fr); align-items: center; gap: 8px; }
+.profile-summary-icon { display: flex; width: 16px; height: 16px; align-items: center; justify-content: center; color: #4f795f; }
+.profile-summary-icon svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.profile-copy-summary dt { color: #4a765c; font-size: 13px; }
+.profile-copy-summary dd { margin: 0; overflow-wrap: anywhere; color: #3d4345; font-size: 13px; }
+.profile-copy-navigation { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 12px; margin: 0 auto 20px; border-bottom: 1px solid #d9dddd; }
+.profile-copy-back { display: inline-block; flex: 0 0 auto; margin-bottom: 8px; padding: 8px 13px; border-radius: 4px; background: #17683f; color: #fff; font-size: 12px; font-weight: 700; text-decoration: none; transition: background .15s ease, transform .15s ease; }
+.profile-copy-back:hover { background: #105633; transform: translateY(-1px); }
+.profile-copy-back:focus-visible { outline: 2px solid #74d39a; outline-offset: 3px; }
+.profile-copy-tabs { display: flex; min-width: 0; flex: 1; margin: 0; padding-left: 0; border: 0; }
+.profile-copy-tabs button { padding: 12px 16px; border: 1px solid transparent; border-bottom: 0; background: transparent; color: #3e7291; font: 13px Arial, sans-serif; cursor: pointer; }
+.profile-copy-tabs button.is-active { margin-bottom: -1px; border-color: #d9dddd; background: #fff; color: #4b4b4b; font-weight: 700; }
+.profile-tab-icon { width: 13px; height: 13px; margin-right: 4px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; vertical-align: -2px; }
+.profile-section-icon { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; vertical-align: -3px; }
+.profile-address-icon { color: #4a765c; }
+.profile-copy-form-panel { width: 100%; margin: 0 auto; padding: 20px; border: 1px solid #e4e6e6; border-radius: 14px; background: #fff; }
+.profile-copy-form-panel[hidden] { display: none; }
+.profile-copy-form-panel h2 { margin: 0 0 18px; padding-bottom: 9px; border-bottom: 1px solid #dedede; color: #4d5558; font-size: 19px; font-weight: 400; }
+.profile-copy-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; row-gap: 10px; }
+.profile-copy-form-grid label { display: grid; grid-template-columns: 125px minmax(0, 1fr); align-items: center; gap: 12px; color: #41484b; font-size: 12px; font-weight: 700; }
+.profile-copy-form-grid input { width: 100%; min-width: 0; height: 35px; padding: 0 11px; border: 1px solid #ccc; border-radius: 0; background: #fff; color: #555; font: 13px Arial, sans-serif; }
+.profile-copy-form-grid input[readonly] { cursor: default; }
+.profile-copy-about-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; }
+.profile-copy-about-grid > div { display: grid; grid-template-columns: minmax(105px, .7fr) minmax(0, 1.3fr); align-items: center; gap: 12px; min-height: 43px; border-bottom: 1px solid #edf1ef; }
+.profile-copy-about-grid span { color: #607168; font-size: 12px; }
+.profile-copy-about-grid strong { overflow-wrap: anywhere; color: #34443b; font-size: 13px; font-weight: 600; }
+.profile-family-fields > div { grid-template-columns: minmax(105px, .7fr) minmax(0, 1.3fr); }
+.profile-family-fields label { color: #607168; font-size: 12px; }
+.profile-family-fields input,
+.profile-family-fields textarea { box-sizing: border-box; width: 100%; min-width: 0; min-height: 35px; padding: 7px 10px; border: 1px solid #d5dfd9; border-radius: 6px; background: #fff; color: #34443b; font: 13px Arial, sans-serif; }
+.profile-family-fields textarea { resize: vertical; }
+.profile-family-fields input:focus,
+.profile-family-fields textarea:focus { outline: 2px solid #cce7d4; border-color: #23804b; }
+.profile-family-save { width: auto; min-width: 160px; margin-top: 18px; padding-inline: 18px; }
+.student-profile-copy-page .profile-emergency-modal { max-height: min(90vh, 760px); display: flex; flex-direction: column; }
+.student-profile-copy-page .profile-emergency-form { min-height: 0; overflow-y: auto; }
+.student-profile-copy-page .profile-emergency-form textarea { box-sizing: border-box; display: block; width: 100%; min-height: 74px; margin-top: 7px; padding: 10px 11px; border: 1px solid #d0d9d2; border-radius: 6px; background: #fff; color: #24372d; font: 13px Arial, Helvetica, sans-serif; resize: vertical; }
+.student-profile-copy-page .profile-emergency-form textarea:focus { outline: 2px solid #cce7d4; border-color: #23804b; }
+.profile-emergency-empty { margin: 0; padding: 8px 0; color: #718078; font-size: 13px; }
+.profile-address-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.profile-address-form fieldset { display: grid; min-width: 0; gap: 10px; margin: 0; padding: 12px 14px 16px; border: 0; }
+.profile-address-form legend { width: 100%; padding: 0 0 8px; color: #3e7291; font-size: 14px; }
+.profile-address-form label { display: grid; grid-template-columns: 120px minmax(0, 1fr); align-items: center; gap: 10px; color: #41484b; font-size: 12px; font-weight: 700; }
+.profile-address-form input,
+.profile-address-form textarea { width: 100%; min-width: 0; min-height: 35px; padding: 7px 10px; border: 1px solid #ccc; border-radius: 0; background: #fff; color: #555; font: 13px Arial, sans-serif; resize: vertical; }
+.profile-address-save { grid-column: 1 / -1; justify-self: start; width: auto; min-width: 120px; padding-right: 18px; padding-left: 18px; }
+.profile-family-panel p { margin: 0; color: #657076; font-size: 13px; }
+.family-background-card { display: grid; grid-template-columns: 48px minmax(0, 1fr); align-items: start; gap: 16px; padding: 12px 16px; }
+.family-background-icon { display: grid; width: 42px; height: 42px; place-items: center; background: #929792; color: #fff; }
+.family-background-icon svg { width: 31px; height: 31px; fill: #fff; }
+.family-heading-icon { width: 17px; height: 17px; vertical-align: -2px; fill: #333; }
+.family-background-details { display: grid; gap: 5px; color: #50585b; font-size: 12px; line-height: 1.4; }
+.family-background-details strong { color: #3b4346; font-size: 14px; }
+.family-background-details b { color: #424a4d; }
+.family-mobile { color: #7a8386; font-size: 10px; }
+.family-status { display: inline-flex; align-items: center; gap: 4px; color: #4c795f; font-size: 11px; font-weight: 700; }
+.family-status svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.student-profile-copy-page .profile-photo-alert { grid-column: 1 / -1; margin: 0; }
+.student-profile-copy-page .menu-toggle,
+.student-profile-copy-page .nav-menu > .theme-toggle { border-color: #d9e4dc; background: #fff; color: #17683e; }
+.student-profile-copy-page .menu-toggle span { background: #17683e; }
+
+/* Keep the entire custom profile readable when the shared theme toggle is on. */
+body.dark-mode.student-profile-copy-page { background: #111b15; color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .topbar { border-color: #2a4032; background: #1b2920; }
+body.dark-mode.student-profile-copy-page .brand { color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .brand small { color: #a8b9ad; }
+body.dark-mode.student-profile-copy-page .profile-copy-intro h2,
+body.dark-mode.student-profile-copy-page .profile-copy-intro > p { color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .profile-copy-avatar-column,
+body.dark-mode.student-profile-copy-page .profile-copy-summary-card,
+body.dark-mode.student-profile-copy-page .profile-copy-family-contact { border-color: #2a4032; background: #1b2920; }
+body.dark-mode.student-profile-copy-page .profile-copy-avatar-name h2,
+body.dark-mode.student-profile-copy-page .profile-copy-summary-card > h2,
+body.dark-mode.student-profile-copy-page .profile-copy-family-contact h2,
+body.dark-mode.student-profile-copy-page .profile-copy-family-contact dd { color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .profile-copy-family-contact dt { color: #8cdbab; }
+body.dark-mode.student-profile-copy-page .profile-copy-avatar-name p { color: #a8b9ad; }
+body.dark-mode.student-profile-copy-page .profile-copy-summary dt { color: #8cdbab; }
+body.dark-mode.student-profile-copy-page .profile-copy-summary dd { color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .profile-summary-icon { color: #8cdbab; }
+body.dark-mode.student-profile-copy-page .profile-copy-navigation { border-color: #2a4032; }
+body.dark-mode.student-profile-copy-page .profile-copy-tabs button { color: #a8cdb4; }
+body.dark-mode.student-profile-copy-page .profile-copy-tabs button.is-active { border-color: #2a4032; background: #1b2920; color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .profile-copy-form-panel,
+body.dark-mode.student-profile-copy-page .profile-copy-intro { border-color: #2a4032; background: #1b2920; }
+body.dark-mode.student-profile-copy-page .profile-copy-basic-panel { background: #17231b; }
+body.dark-mode.student-profile-copy-page .profile-copy-form-panel h2 { border-color: #2a4032; color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .profile-section-icon { color: #c8d8ce; }
+body.dark-mode.student-profile-copy-page .profile-address-icon { color: #8cdbab; }
+body.dark-mode.student-profile-copy-page .profile-copy-form-grid label,
+body.dark-mode.student-profile-copy-page .profile-address-form label { color: #dce8df; }
+body.dark-mode.student-profile-copy-page .profile-copy-about-grid > div { border-color: #2a4032; }
+body.dark-mode.student-profile-copy-page .profile-copy-about-grid span { color: #a8b9ad; }
+body.dark-mode.student-profile-copy-page .profile-copy-about-grid strong { color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .profile-family-fields label { color: #a8b9ad; }
+body.dark-mode.student-profile-copy-page .profile-family-fields input,
+body.dark-mode.student-profile-copy-page .profile-family-fields textarea { border-color: #365342; background: #17231b; color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .profile-emergency-form textarea { border-color: #365342; background: #17231b; color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .profile-emergency-empty { color: #a8b9ad; }
+body.dark-mode.student-profile-copy-page .profile-copy-form-grid input,
+body.dark-mode.student-profile-copy-page .profile-address-form input,
+body.dark-mode.student-profile-copy-page .profile-address-form textarea { border-color: #365342; background: #17231b; color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .profile-address-form legend { color: #8cdbab; }
+body.dark-mode.student-profile-copy-page .profile-family-panel p { color: #a8b9ad; }
+body.dark-mode.student-profile-copy-page .family-background-icon { background: #59645d; }
+body.dark-mode.student-profile-copy-page .family-heading-icon { fill: #dce8df; }
+body.dark-mode.student-profile-copy-page .family-background-details,
+body.dark-mode.student-profile-copy-page .family-background-details strong,
+body.dark-mode.student-profile-copy-page .family-background-details b { color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .family-background-details .family-mobile { color: #a8b9ad; }
+body.dark-mode.student-profile-copy-page .family-status { color: #8cdbab; }
+body.dark-mode.student-profile-copy-page .menu-toggle,
+body.dark-mode.student-profile-copy-page .nav-menu > .theme-toggle { border-color: #365342; background: #17231b; color: #8cdbab; }
+body.dark-mode.student-profile-copy-page .menu-toggle span { background: #8cdbab; }
+body.dark-mode.student-profile-copy-page .menu-panel { border-color: #2a4032; background: #1b2920; }
+body.dark-mode.student-profile-copy-page .menu-user strong,
+body.dark-mode.student-profile-copy-page .menu-link { color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .menu-user span { color: #a8b9ad; }
+body.dark-mode.student-profile-copy-page .menu-link:hover { background: #263a2d; }
+
+/* Persistent left aligned role navigation. */
+.student-profile-copy-page .topbar:has(.menu-panel) { position: relative; margin-bottom: 64px; }
+.student-profile-copy-page .topbar:has(.menu-panel) .nav-menu { position: static; }
+.student-profile-copy-page .topbar:has(.menu-panel) .menu-toggle,
+.student-profile-copy-page .topbar:has(.menu-panel) .menu-user { display: none; }
+.student-profile-copy-page .topbar:has(.menu-panel) .menu-panel,
+.student-profile-copy-page .topbar:has(.menu-panel) .menu-panel[hidden] { position: absolute; top: calc(100% + 8px); left: 50%; right: auto; display: flex !important; width: max-content; max-width: calc(100% - 32px); min-height: 48px; align-items: center; justify-content: center; gap: 4px; padding: 5px 8px; overflow-x: auto; transform: translateX(-50%); border: 1px solid #d3e2d7; border-radius: 999px; background: #e9f2eb; box-shadow: 0 3px 10px #00000012; }
+.student-profile-copy-page .topbar:has(.menu-panel) .menu-link { width: auto; min-height: 40px; flex: 0 0 auto; padding: 8px 16px; border-radius: 999px; color: #355844; white-space: nowrap; }
+.student-profile-copy-page .topbar:has(.menu-panel) .menu-link.active { background: #17683e; color: #fff; box-shadow: none; }
+.student-profile-copy-page .topbar:has(.menu-panel) .signout-link { position: absolute; top: -50px; right: 24px; display: grid; width: 42px; height: 42px; min-height: 42px; place-items: center; overflow: hidden; padding: 0; border: 1px solid #d9e4dc; border-radius: 9px; background: #fff; color: #17683e; font-size: 0; }
+.student-profile-copy-page .topbar:has(.menu-panel) .signout-link::before { content: ""; width: 30px; height: 30px; background: currentColor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M18 5H8a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-3h-3v3H8V8h10v3h3V8a3 3 0 0 0-3-3Z'/%3E%3Cpath d='M18 16h10m-4-4 4 4-4 4' fill='none' stroke='black' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat; }
+body.dark-mode.student-profile-copy-page .topbar:has(.menu-panel) .menu-panel { border-color: #365342; background: #17231b; }
+body.dark-mode.student-profile-copy-page .topbar:has(.menu-panel) .menu-link { color: #c5d4ca; }
+body.dark-mode.student-profile-copy-page .topbar:has(.menu-panel) .menu-link:hover { background: #263a2d; color: #e1ebe4; }
+body.dark-mode.student-profile-copy-page .topbar:has(.menu-panel) .menu-link.active { background: #365342; color: #a8dbb7; box-shadow: none; }
+body.dark-mode.student-profile-copy-page .topbar:has(.menu-panel) .signout-link { color: #8cdbab; }
+body.dark-mode.student-profile-copy-page .topbar:has(.menu-panel) .signout-link { border-color: #365342; background: #17231b; }
+@media (max-width: 600px) { .student-profile-copy-page .topbar:has(.menu-panel) { margin-bottom: 64px; } .student-profile-copy-page .topbar:has(.menu-panel) .menu-panel { justify-content: flex-start; } }
+@media (max-width: 760px) {
+    .student-profile-copy-page .dashboard { width: min(100% - 32px, 640px); margin-top: 20px; }
+    .teacher-profile-page .profile-copy-hero { align-items: start; }
+    .profile-copy-hero { grid-template-columns: minmax(210px, .75fr) minmax(0, 1.25fr); gap: 16px; }
+    .profile-copy-avatar-column { padding: 20px 14px; }
+    .profile-copy-intro { padding: 18px; }
+    .profile-copy-form-grid { grid-template-columns: 1fr; }
+    .profile-copy-about-grid { grid-template-columns: 1fr; }
+    .profile-family-fields > div { grid-template-columns: 105px minmax(0, 1fr); }
+    .profile-address-form { grid-template-columns: 1fr; gap: 10px; }
+}
+@media (max-width: 520px) {
+    .student-profile-copy-page .dashboard { width: calc(100% - 24px); margin-top: 16px; }
+    .profile-copy-hero { grid-template-columns: 1fr; }
+    .profile-copy-sidebar { grid-template-columns: 1fr; }
+    .profile-copy-photo { width: 112px; height: 112px; }
+    .profile-copy-avatar-column { width: 100%; }
+    .profile-copy-intro { padding-top: 0; }
+    .profile-copy-summary div { grid-template-columns: 16px minmax(75px, .8fr) minmax(0, 1.2fr); gap: 7px; }
+    .profile-copy-navigation { flex-wrap: wrap; gap: 0; }
+    .profile-copy-tabs { flex: 1 0 100%; }
+    .profile-copy-tabs button { padding: 10px 12px; }
+    .profile-copy-back { margin: 0 0 10px auto; }
+    .profile-copy-form-panel { padding: 14px 10px; }
+    .profile-copy-form-grid label { grid-template-columns: 105px minmax(0, 1fr); gap: 7px; }
+    .profile-address-form label { grid-template-columns: 105px minmax(0, 1fr); gap: 7px; }
+    .profile-address-save { grid-column: 1; }
+}
+@media (max-width: 520px) {
+    .profile-copy-form-grid input, .profile-copy-form-grid select, .profile-address-form input, .profile-address-form select, .profile-inline-form input, .profile-inline-form select { min-height: 44px; font-size: 16px; }
+    .profile-copy-summary div { overflow-wrap: anywhere; }
+    .student-profile-copy-page .topbar:has(.menu-panel) .menu-panel { left: 12px; width: calc(100% - 24px); max-width: none; transform: none; border-radius: 13px; }
+}
+

@@ -1,0 +1,10 @@
+/* Student dashboard page styles */
+.student-dashboard .dashboard-welcome-banner { min-height: 150px; }
+.student-dashboard .summary-card { min-height: 106px; padding: 16px 18px; }
+.student-dashboard .summary-card strong { text-align: center; }
+.student-summary-card-heading { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.student-summary-card-heading .summary-label { margin: 0; color: #68766d; font-size: 11px; font-weight: 700; }
+.student-summary-icon { display: grid; width: 27px; height: 27px; flex: 0 0 27px; place-items: center; border-radius: 8px; background: #edf6ef; color: #287047; }
+.student-summary-icon svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+body.dark-mode.student-dashboard .student-summary-card-heading .summary-label { color: #b5c8bb; }
+body.dark-mode.student-dashboard .student-summary-icon { background: #263a2d; color: #a8dbb7; }

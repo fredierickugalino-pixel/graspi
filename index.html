@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to the St. Peregrine Institute online grading system to view school information and grades.">
+    <meta name="theme-color" content="#105334">
+    <meta property="og:title" content="St. Peregrine Institute | Online Grading System">
+    <meta property="og:description" content="Sign in to view school information and grades at St. Peregrine Institute.">
+    <meta property="og:type" content="website">
+    <title>Student Login | St. Peregrine Institute</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="css/login.css?v=4">
+    <script src="js/login.js?v=4" defer></script>
+</head>
+<body class="login-page-body">
+    <header class="login-header">
+        <a class="login-brand" href="index.html">
+            <img src="logo.png" alt="St. Peregrine Institute logo">
+            <span>
+                <strong>ST. PEREGRINE INSTITUTE</strong>
+                <small>Online Grading System</small>
+            </span>
+        </a>
+    </header>
+
+    <main class="login-wrap login-page-main">
+        <section class="welcome-shell" aria-labelledby="welcome-title">
+            <div class="welcome-copy">
+                <h1 id="welcome-title">Welcome to St. Peregrine Institute</h1>
+                <p>Log in to view your school information and stay up to date with your learning.</p>
+            </div>
+
+            <div class="login-layout">
+                <section class="login-card" aria-label="Sign in">
+
+            <div id="login-error-modal" class="login-error-modal" role="alertdialog" aria-modal="true" aria-labelledby="login-error-title" aria-describedby="login-error-message" hidden>
+                <div class="login-error-dialog" role="document">
+                    <span class="login-error-icon" aria-hidden="true">!</span>
+                    <h2 id="login-error-title">Unable to log in</h2>
+                    <p id="login-error-message"></p>
+                    <button type="button" class="login-error-close" data-login-error-close>Try again</button>
+                </div>
+            </div>
+
+            <form action="login.php" method="post">
+                <div class="field">
+                    <label for="identifier">LRN or Email address</label>
+                    <input
+                        type="text"
+                        id="identifier"
+                        name="identifier"
+                        placeholder="Enter your LRN or Email address"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <div class="password-wrap">
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+                        <button
+                            class="show-password"
+                            type="button"
+                            aria-controls="password"
+                            aria-label="Show password"
+                            aria-pressed="false"
+                            title="Show password"
+                        >
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path class="eye-slash" d="m3 3 18 18"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <a class="forgot" href="forgotpassword/index.php">Forgot password?</a>
+                </div>
+
+                <button class="submit" type="submit">LOGIN</button>
+            </form>
+
+            <p class="register-link">Need a student account? Contact your school registrar.</p>
+                </section>
+
+                <div class="welcome-visual" data-login-slider data-slides="login-slide-1.jpg|login-slide-2.jpg" data-interval="5000">
+                    <img class="login-hero-image" src="login-slide-1.jpg" alt="St. Peregrine Institute promotional image">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

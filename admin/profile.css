@@ -1,0 +1,110 @@
+.admin-profile-page .admin-profile-icon,
+.admin-profile-page .student-signout-button { display: inline-flex; width: 42px; height: 42px; flex: 0 0 42px; align-items: center; justify-content: center; border: 1px solid #d9e4dc; border-radius: 9px; background: #fff; color: #17683e; text-decoration: none; }
+.admin-profile-page .admin-profile-icon svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.admin-profile-page .student-signout-button { overflow: hidden; font-size: 0; white-space: nowrap; }
+.admin-profile-page .student-signout-button::before { content: ""; width: 30px; height: 30px; background: currentColor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M18 5H8a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-3h-3v3H8V8h10v3h3V8a3 3 0 0 0-3-3Z'/%3E%3Cpath d='M18 16h10m-4-4 4 4-4 4' fill='none' stroke='black' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat; }
+.admin-profile-page .admin-profile-icon:hover,
+.admin-profile-page .student-signout-button:hover,
+.admin-profile-page .admin-profile-icon.is-active { background: #eff7f1; }
+body.dark-mode.admin-profile-page .admin-profile-icon,
+body.dark-mode.admin-profile-page .student-signout-button { border-color: #365342; background: #17231b; color: #8cdbab; }
+body.dark-mode.admin-profile-page .admin-profile-icon:hover,
+body.dark-mode.admin-profile-page .student-signout-button:hover,
+body.dark-mode.admin-profile-page .admin-profile-icon.is-active { background: #263a2d; }
+
+.admin-account-board { width: min(100%, 860px); min-height: 380px; padding: 24px; overflow: hidden; border: 1px solid #e1e9e3; border-radius: 16px; background: #fff; box-shadow: 0 3px 12px #173b2410; color: #20352a; }
+.admin-account-header { display: flex; min-height: 68px; align-items: center; gap: 14px; padding-bottom: 17px; border-bottom: 1px solid #e8eee9; }
+.admin-account-avatar { display: block; width: 50px; height: 50px; flex: 0 0 auto; border-radius: 5px; object-fit: cover; background: #51406b; }
+.admin-account-avatar-initial { display: grid; place-items: center; color: #fff; font-size: 22px; font-weight: 800; }
+.admin-account-name { min-width: 0; }
+.admin-account-name h2 { margin: 0; color: #203a2b; font-size: 19px; overflow-wrap: anywhere; }
+.admin-account-photo-form { margin-left: auto; }
+.admin-account-photo-form input { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+.admin-account-photo-form input:focus-visible + label { outline: 2px solid #74d39a; outline-offset: 2px; }
+.admin-account-photo-form label { display: inline-flex; min-height: 36px; align-items: center; justify-content: center; padding: 0 12px; border: 1px solid #d0d9d2; border-radius: 6px; background: #f4f7f5; color: #17683f; font-size: 11px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.admin-account-photo-form label:hover { background: #e8f3eb; color: #105633; }
+.admin-account-checks { display: grid; width: min(100%, 560px); gap: 0; padding: 16px 10px 10px; }
+.admin-account-check-row { display: flex; width: 100%; min-height: 62px; align-items: center; justify-content: space-between; gap: 12px; padding: 5px 3px; border: 0; background: transparent; color: #526258; font: inherit; font-size: 17px; font-weight: 700; text-align: left; cursor: pointer; }
+.admin-account-check-row:hover span:first-child, .admin-account-check-row:focus-visible span:first-child { color: #17683f; }
+.admin-account-check-row:focus-visible { outline: 2px solid #74d39a; outline-offset: 2px; }
+.admin-account-status { display: grid; width: 28px; height: 28px; flex: 0 0 auto; place-items: center; border-radius: 4px; font-size: 19px; line-height: 1; }
+.admin-account-status.is-complete { background: #7654a8; color: #fff; }
+.admin-account-status.is-missing { border: 1px solid #c4d0c8; color: #839188; }
+.admin-account-edit-dialog { width: min(420px, calc(100% - 32px)); padding: 0; border: 1px solid #d4ded7; border-radius: 14px; background: #fff; color: #20352a; box-shadow: 0 20px 60px #0003; }
+.admin-account-edit-dialog::backdrop { background: #07100bd9; }
+.admin-account-edit-form { display: grid; gap: 12px; padding: 22px; }
+.admin-account-edit-form h2 { margin: 0 0 4px; color: #203a2b; font-size: 18px; }
+.admin-account-edit-form label { color: #526258; font-size: 12px; font-weight: 700; }
+.admin-account-edit-form input, .admin-account-edit-form select { box-sizing: border-box; width: 100%; min-height: 42px; padding: 0 11px; border: 1px solid #d0d9d2; border-radius: 7px; background: #fff; color: #203a2b; font: 14px Arial, Helvetica, sans-serif; }
+.admin-account-edit-form input:focus, .admin-account-edit-form select:focus { outline: 2px solid #74d39a; border-color: #74d39a; }
+.admin-account-edit-form [hidden] { display: none; }
+.admin-account-edit-error { margin: 0; color: #ffaaa4; font-size: 12px; }
+.admin-account-edit-actions { display: flex; justify-content: flex-end; gap: 9px; margin-top: 6px; }
+.admin-account-edit-actions button { min-height: 38px; padding: 0 13px; border-radius: 7px; font-size: 12px; font-weight: 700; cursor: pointer; }
+.admin-account-cancel { border: 1px solid #d0d9d2; background: #f4f7f5; color: #294a35; }
+.admin-account-save { border: 0; background: #17683f; color: #fff; }
+.admin-account-save:hover { background: #20834f; }
+body.dark-mode .admin-account-board { border-color: #2a4032; background: #1b2920; box-shadow: none; color: #e1ebe4; }
+body.dark-mode .admin-account-header { border-color: #314739; }
+body.dark-mode .admin-account-name h2,
+body.dark-mode .admin-account-edit-form h2 { color: #e1ebe4; }
+body.dark-mode .admin-account-photo-form label { border-color: #365342; background: #223329; color: #dce8df; }
+body.dark-mode .admin-account-photo-form label:hover { background: #2a4032; color: #8cdbab; }
+body.dark-mode .admin-account-check-row { color: #a8b9ad; }
+body.dark-mode .admin-account-check-row:hover span:first-child,
+body.dark-mode .admin-account-check-row:focus-visible span:first-child { color: #8cdbab; }
+body.dark-mode .admin-account-status.is-missing { border-color: #c4d0c8; color: #e1ebe4; }
+body.dark-mode .admin-account-edit-dialog { border-color: #365342; background: #1b2920; color: #e1ebe4; }
+body.dark-mode .admin-account-edit-form label { color: #a8b9ad; }
+body.dark-mode .admin-account-edit-form input,
+body.dark-mode .admin-account-edit-form select { border-color: #365342; background: #111b15; color: #e1ebe4; }
+body.dark-mode .admin-account-cancel { border-color: #365342; background: transparent; color: #dce8df; }
+@media (max-width: 600px) {
+    .admin-account-board { min-height: 0; padding: 18px; }
+    .admin-account-header { gap: 10px; }
+    .admin-account-name h2 { font-size: 16px; }
+    .admin-account-photo-form label { min-height: 34px; padding: 0 9px; font-size: 10px; }
+    .admin-account-check-row { min-height: 56px; font-size: 15px; }
+}
+
+.admin-profile-page .admin-profile-initial { display: grid; place-items: center; border-radius: 18px; background: #17683f; color: #fff; font-size: 48px; font-weight: 700; }
+.admin-profile-page .admin-profile-photo-form { width: 100%; margin: 0; }
+.admin-profile-page .admin-profile-photo-form input { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+.admin-profile-page .admin-profile-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.admin-profile-page .admin-profile-field { position: relative; display: grid; min-width: 0; gap: 7px; padding: 12px; border: 1px solid #e2eae5; border-radius: 8px; background: #fff; color: #3d4345; font: inherit; text-align: left; }
+.admin-profile-page button.admin-profile-field { cursor: pointer; }
+.admin-profile-page button.admin-profile-field:hover { border-color: #74b78d; background: #f5faf6; }
+.admin-profile-page .admin-profile-field span { color: #4a765c; font-size: 12px; font-weight: 700; }
+.admin-profile-page .admin-profile-field strong { overflow-wrap: anywhere; font-size: 14px; font-weight: 500; }
+.admin-profile-page .admin-profile-field small { position: absolute; top: 10px; right: 11px; color: #17683f; font-size: 11px; font-weight: 700; }
+.admin-profile-page .admin-profile-field:focus-visible { outline: 2px solid #74d39a; outline-offset: 2px; }
+body.dark-mode.admin-profile-page .admin-profile-field { border-color: #314739; background: #17231b; color: #e1ebe4; }
+body.dark-mode.admin-profile-page .admin-profile-field span { color: #8cdbab; }
+body.dark-mode.admin-profile-page button.admin-profile-field:hover { background: #203329; }
+@media (max-width: 640px) { .admin-profile-page .admin-profile-fields { grid-template-columns: 1fr; } }
+
+/* Keep the administrator details aligned with the shared student and teacher profile layout. */
+.admin-profile-page .admin-profile-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; }
+.admin-profile-page .admin-profile-field { display: grid; grid-template-columns: minmax(100px, .7fr) minmax(0, 1.3fr) auto; align-items: center; gap: 12px; min-height: 43px; padding: 9px 3px; border: 0; border-bottom: 1px solid #edf1ef; border-radius: 0; background: transparent; color: #34443b; text-align: left; }
+.admin-profile-page button.admin-profile-field { width: 100%; font: inherit; cursor: pointer; }
+.admin-profile-page button.admin-profile-field:hover { border-color: #edf1ef; background: transparent; }
+.admin-profile-page .admin-profile-field span { color: #607168; font-size: 12px; font-weight: 400; }
+.admin-profile-page .admin-profile-field strong { font-size: 13px; font-weight: 600; }
+.admin-profile-page .admin-profile-field small { position: static; justify-self: end; color: #17683f; font-size: 10px; }
+.admin-profile-page button.admin-profile-field:hover span,
+.admin-profile-page button.admin-profile-field:hover small { color: #17683f; }
+body.dark-mode.admin-profile-page .admin-profile-field { border-bottom-color: #2a4032; background: transparent; color: #e1ebe4; }
+body.dark-mode.admin-profile-page button.admin-profile-field:hover { border-bottom-color: #2a4032; background: transparent; }
+body.dark-mode.admin-profile-page .admin-profile-field span { color: #a8b9ad; }
+body.dark-mode.admin-profile-page .admin-profile-field small,
+body.dark-mode.admin-profile-page button.admin-profile-field:hover span { color: #8cdbab; }
+@media (max-width: 640px) {
+    .admin-profile-page .admin-profile-fields { grid-template-columns: 1fr; }
+}
+
+.admin-profile-page .profile-copy-hero { min-height: calc(100vh - 220px); align-items: center; }
+.admin-profile-page .admin-profile-back { display: inline-flex; min-height: 40px; align-items: center; gap: 8px; margin: 0 0 18px; padding: 0 13px; border: 1px solid #d9e4dc; border-radius: 8px; background: #fff; color: #17683e; font-size: 13px; font-weight: 700; text-decoration: none; }
+.admin-profile-page .admin-profile-back:hover { background: #eff7f1; }
+body.dark-mode.admin-profile-page .admin-profile-back { border-color: #365342; background: #1b2920; color: #8cdbab; }
+body.dark-mode.admin-profile-page .admin-profile-back:hover { background: #263a2d; }
+@media (max-width: 760px) { .admin-profile-page .profile-copy-hero { min-height: 0; } }

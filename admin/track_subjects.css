@@ -1,0 +1,148 @@
+.track-subjects-page { background: #f3f7f4; }
+.track-subjects-dashboard { max-width: 1180px; }
+.track-plan-back { display: inline-flex; margin: 0 0 14px; color: #287047; font-size: 13px; font-weight: 700; text-decoration: none; }
+.track-plan-back:hover { text-decoration: underline; }
+.track-subjects-dashboard > .page-heading { margin-bottom: 20px; }
+.track-subjects-dashboard > .page-heading h1 { margin: 0 0 8px; }
+.track-plan-panel,
+.track-plan-list-panel { margin: 0 0 20px; overflow: hidden; border: 1px solid #e1e9e3; border-radius: 15px; background: #fff; box-shadow: 0 8px 24px rgba(30,67,45,.05); }
+.track-plan-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 20px 24px; border-bottom: 1px solid #e8eee9; }
+.track-plan-heading h2 { margin: 0 0 5px; color: #203b2c; font-size: 18px; }
+.track-plan-heading p { margin: 0; color: #718178; font-size: 12px; }
+.track-plan-form { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 15px; padding: 22px 24px 24px; }
+.track-plan-form > label,
+.track-plan-weights label,
+.track-plan-filter label { display: grid; gap: 7px; color: #40564a; font-size: 12px; font-weight: 700; }
+.track-plan-form select,
+.track-plan-form input,
+.track-plan-form textarea,
+.track-plan-filter select { box-sizing: border-box; width: 100%; min-height: 40px; padding: 9px 11px; border: 1px solid #d4e0d7; border-radius: 8px; background: #fff; color: #263a2e; font: 13px Arial, sans-serif; }
+.track-plan-form textarea { min-height: 115px; resize: vertical; line-height: 1.5; }
+.track-plan-subjects-label { grid-column: 1 / -1; }
+.track-plan-subjects-label small { color: #748278; font-size: 11px; font-weight: 400; }
+.track-plan-weights { display: grid; grid-column: 1 / -1; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding: 14px; border: 1px solid #e5ece7; border-radius: 10px; background: #f8fbf9; }
+.track-plan-weights > strong { grid-column: 1 / -1; color: #355342; font-size: 12px; }
+.track-plan-note { grid-column: 1 / -1; margin: -7px 0 0; color: #718178; font-size: 11px; }
+.track-plan-form > .small-button { justify-self: start; min-height: 40px; padding: 0 17px; border: 0; border-radius: 8px; background: #17683f; color: #fff; font-weight: 700; cursor: pointer; }
+.track-plan-form > .small-button:hover { background: #105633; }
+.track-plan-filter { display: flex; gap: 10px; }
+.track-plan-filter label { min-width: 140px; font-size: 10px; }
+.track-plan-filter select { min-height: 36px; padding: 7px 9px; font-size: 12px; }
+.track-plan-terms { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; padding: 20px 24px 24px; }
+.track-plan-term { min-height: 145px; padding: 15px; border: 1px solid #e1e9e3; border-radius: 10px; background: #fbfdfb; }
+.track-plan-term h3 { margin: 0 0 10px; color: #287047; font-size: 14px; }
+.track-plan-term ul { margin: 0; padding-left: 19px; color: #40564a; font-size: 12px; line-height: 1.8; }
+.track-plan-no-subjects { color: #87948b; font-size: 12px; }
+.track-plan-list-panel > .empty-state { padding: 0 24px 20px; }
+.track-plan-filter-bar { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 15px; padding: 22px 24px; }
+.track-plan-filter-bar label { display: grid; gap: 7px; color: #40564a; font-size: 12px; font-weight: 700; }
+.track-plan-filter-bar select { box-sizing: border-box; width: 100%; min-height: 42px; padding: 9px 11px; border: 1px solid #d4e0d7; border-radius: 8px; background: #fff; color: #263a2e; font: 13px Arial, sans-serif; }
+.track-plan-filter-layout { display: flex; align-items: end; gap: 14px; padding: 0 24px; }
+.track-plan-filter-layout .track-plan-filter-bar { flex: 1; padding: 22px 0; }
+.track-plan-manage-button,.track-plan-save-button { min-height: 42px; margin-bottom: 22px; padding: 0 17px; border: 0; border-radius: 8px; background: #17683f; color: #fff; font-size: 12px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.track-plan-manage-button:hover,.track-plan-save-button:hover { background: #105633; }
+.track-plan-manage-button:disabled,.track-plan-save-button:disabled { opacity: .55; cursor: not-allowed; }
+.track-plan-dialog { width: min(560px, calc(100% - 32px)); max-height: min(80vh, 720px); padding: 0; overflow: hidden; border: 1px solid #d4e0d7; border-radius: 16px; background: #fff; color: #263a2e; box-shadow: 0 24px 70px #0004; }
+.track-plan-dialog::backdrop { background: #07100bcc; }
+.track-plan-dialog-form { display: grid; max-height: min(80vh, 720px); grid-template-rows: auto minmax(0, 1fr) auto; }
+.track-plan-dialog-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; padding: 22px 24px 16px; border-bottom: 1px solid #e8eee9; }
+.track-plan-dialog-heading .eyebrow { margin: 0 0 6px; color: #47845d; font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+.track-plan-dialog-heading h2 { margin: 0 0 6px; color: #203b2c; font-size: 20px; }
+.track-plan-dialog-heading p:last-child { margin: 0; color: #718178; font-size: 12px; line-height: 1.5; }
+.track-plan-dialog-close { width: 34px; height: 34px; flex: 0 0 auto; border: 0; border-radius: 7px; background: #f1f5f2; color: #40564a; font-size: 24px; cursor: pointer; }
+.track-plan-checklist { display: grid; align-content: start; gap: 8px; padding: 16px 24px; overflow-y: auto; }
+.track-plan-selected-list { display: grid; gap: 8px; }
+.track-plan-check-item { display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid #e1e9e3; border-radius: 9px; background: #fbfdfb; cursor: pointer; }
+.track-plan-check-item input { width: 17px; height: 17px; accent-color: #17683f; }
+.track-plan-check-item span { display: grid; gap: 4px; }
+.track-plan-check-item strong { color: #294a35; font-size: 13px; }
+.track-plan-check-item small { color: #718178; font-size: 11px; }
+.track-plan-remove-label { margin-left: auto; color: #9e4037; font-size: 11px; font-weight: 700; }
+.track-plan-add-row { display: flex; align-items: end; gap: 10px; margin-top: 8px; padding-top: 14px; border-top: 1px solid #e8eee9; }
+.track-plan-add-row label { display: grid; flex: 1; gap: 7px; color: #40564a; font-size: 12px; font-weight: 700; }
+.track-plan-add-row select { box-sizing: border-box; width: 100%; min-height: 40px; padding: 8px 10px; border: 1px solid #d4e0d7; border-radius: 7px; background: #fff; color: #263a2e; font: 12px Arial, sans-serif; }
+.track-plan-add-selected-button { min-height: 40px; padding: 0 13px; border: 1px solid #17683f; border-radius: 7px; background: #fff; color: #17683f; font-size: 11px; font-weight: 700; cursor: pointer; }
+.track-plan-dialog-actions { display: flex; justify-content: flex-end; gap: 9px; padding: 14px 24px 20px; border-top: 1px solid #e8eee9; }
+.track-plan-dialog-actions button { min-height: 38px; margin: 0; padding: 0 14px; border-radius: 7px; font-size: 12px; font-weight: 700; cursor: pointer; }
+.track-plan-cancel-button { border: 1px solid #d4e0d7; background: #fff; color: #40564a; }
+.track-plan-save-button { border: 0; }
+.track-plan-table-wrap { overflow-x: auto; }
+.track-plan-table { width: 100%; border-collapse: collapse; text-align: left; }
+.track-plan-table th { padding: 13px 20px; background: #f3f7f4; color: #68786e; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; }
+.track-plan-table td { padding: 15px 20px; border-top: 1px solid #edf1ee; color: #526359; font-size: 12px; }
+.track-plan-table td strong { color: #294a35; font-size: 13px; }
+.track-plan-kind { display: inline-flex; padding: 5px 9px; border-radius: 999px; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.track-plan-kind.is-core { background: #edf2f8; color: #4b6280; }
+.track-plan-kind.is-track { background: #e8f3eb; color: #317148; }
+.track-plan-assignment { display: inline-flex; padding: 5px 9px; border-radius: 999px; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.track-plan-assignment.is-assigned { background: #e8f3eb; color: #317148; }
+.track-plan-assignment.is-unassigned { background: #f2f3f2; color: #68766d; }
+.track-plan-action-form { margin: 0; }
+.track-plan-add-button,
+.track-plan-remove-button { min-width: 78px; min-height: 34px; padding: 0 11px; border: 1px solid #17683f; border-radius: 7px; background: #17683f; color: #fff; font: 700 11px Arial, sans-serif; cursor: pointer; }
+.track-plan-add-button:hover { background: #105633; }
+.track-plan-remove-button { border-color: #d7a8a2; background: #fff; color: #9e4037; }
+.track-plan-remove-button:hover { background: #fff3f1; }
+body.dark-mode.track-subjects-page { background: #101914; color: #e1ebe4; }
+body.dark-mode .track-plan-back { color: #a8dbb7; }
+body.dark-mode .track-plan-panel,
+body.dark-mode .track-plan-list-panel { border-color: #365342; background: #1b2920; }
+body.dark-mode .track-plan-heading { border-color: #365342; }
+body.dark-mode .track-plan-heading h2,
+body.dark-mode .track-plan-weights > strong { color: #e1ebe4; }
+body.dark-mode .track-plan-heading p,
+body.dark-mode .track-plan-subjects-label small,
+body.dark-mode .track-plan-note { color: #a8b9ad; }
+body.dark-mode .track-plan-form > label,
+body.dark-mode .track-plan-weights label,
+body.dark-mode .track-plan-filter label { color: #d0ddd4; }
+body.dark-mode .track-plan-form select,
+body.dark-mode .track-plan-form input,
+body.dark-mode .track-plan-form textarea,
+body.dark-mode .track-plan-filter select { border-color: #365342; background: #17231b; color: #e1ebe4; }
+body.dark-mode .track-plan-weights,
+body.dark-mode .track-plan-term { border-color: #365342; background: #17231b; }
+body.dark-mode .track-plan-term h3 { color: #a8dbb7; }
+body.dark-mode .track-plan-term ul { color: #d0ddd4; }
+body.dark-mode .track-plan-filter-bar label { color: #d0ddd4; }
+body.dark-mode .track-plan-filter-bar select { border-color: #365342; background: #17231b; color: #e1ebe4; }
+body.dark-mode .track-plan-dialog { border-color: #365342; background: #1b2920; color: #e1ebe4; }
+body.dark-mode .track-plan-dialog-heading,body.dark-mode .track-plan-dialog-actions { border-color: #365342; }
+body.dark-mode .track-plan-dialog-heading h2,body.dark-mode .track-plan-check-item strong { color: #e1ebe4; }
+body.dark-mode .track-plan-dialog-heading p:last-child,body.dark-mode .track-plan-check-item small { color: #a8b9ad; }
+body.dark-mode .track-plan-dialog-close,body.dark-mode .track-plan-check-item { border-color: #365342; background: #17231b; color: #d0ddd4; }
+body.dark-mode .track-plan-add-row { border-color: #365342; }
+body.dark-mode .track-plan-add-row label { color: #d0ddd4; }
+body.dark-mode .track-plan-add-row select { border-color: #365342; background: #17231b; color: #e1ebe4; }
+body.dark-mode .track-plan-add-selected-button { border-color: #74d39a; background: #17231b; color: #a8dbb7; }
+body.dark-mode .track-plan-cancel-button { border-color: #365342; background: #17231b; color: #d0ddd4; }
+body.dark-mode .track-plan-table th { background: #17231b; color: #a8b9ad; }
+body.dark-mode .track-plan-table td { border-color: #365342; color: #d0ddd4; }
+body.dark-mode .track-plan-table td strong { color: #e1ebe4; }
+body.dark-mode .track-plan-kind.is-core { background: #263348; color: #c2d6f1; }
+body.dark-mode .track-plan-kind.is-track { background: #263a2d; color: #a8dbb7; }
+body.dark-mode .track-plan-assignment.is-assigned { background: #263a2d; color: #a8dbb7; }
+body.dark-mode .track-plan-assignment.is-unassigned { background: #27332b; color: #a8b9ad; }
+body.dark-mode .track-plan-add-button { border-color: #74d39a; background: #17683f; color: #fff; }
+body.dark-mode .track-plan-remove-button { border-color: #754841; background: #2c201e; color: #f0a49b; }
+body.dark-mode .track-plan-remove-button:hover { background: #3d2623; }
+@media (max-width: 700px) {
+    .track-plan-form { grid-template-columns: 1fr 1fr; padding: 18px; }
+    .track-plan-filter-bar { grid-template-columns: 1fr; padding: 18px; }
+    .track-plan-filter-layout { align-items: stretch; flex-direction: column; gap: 0; padding: 0 18px 18px; }
+    .track-plan-filter-layout .track-plan-filter-bar { padding: 18px 0 12px; }
+    .track-plan-manage-button { align-self: flex-start; margin: 0; }
+    .track-plan-add-row { align-items: stretch; flex-direction: column; }
+    .track-plan-add-selected-button { align-self: flex-start; }
+    .track-plan-terms { grid-template-columns: 1fr; padding: 16px; }
+    .track-plan-heading { align-items: stretch; flex-direction: column; }
+    .track-plan-filter { flex-wrap: wrap; }
+}
+@media (max-width: 480px) {
+    .track-plan-form { grid-template-columns: 1fr; }
+    .track-plan-subjects-label,
+    .track-plan-weights,
+    .track-plan-note { grid-column: auto; }
+    .track-plan-weights { grid-template-columns: 1fr; }
+    .track-plan-weights > strong { grid-column: auto; }
+}

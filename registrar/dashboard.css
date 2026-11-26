@@ -1,0 +1,105 @@
+.registrar-dashboard-page {
+    min-height: 100vh;
+    background: #f3f6f4;
+    color: #18342a;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+.registrar-header {
+    min-height: 76px;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: #fff;
+    border-bottom: 1px solid #e1e9e4;
+}
+
+.registrar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.registrar-brand img { width: 42px; height: 42px; object-fit: contain; }
+.registrar-brand strong, .registrar-brand small { display: block; }
+.registrar-brand strong { font-size: .88rem; letter-spacing: .04em; }
+.registrar-brand small { margin-top: 3px; color: #6d8076; font-size: .76rem; }
+
+.registrar-header-actions { display: flex; align-items: center; gap: 20px; font-size: .9rem; }
+.registrar-header-actions a, .registrar-next-step a { color: #fff; background: #17643f; border-radius: 8px; padding: 10px 15px; text-decoration: none; font-weight: 650; }
+
+.registrar-main { width: min(1100px, 90vw); margin: 48px auto; }
+.registrar-welcome { margin-bottom: 26px; }
+.registrar-eyebrow { margin: 0 0 9px; color: #39805d; font-size: .76rem; font-weight: 750; letter-spacing: .12em; }
+.registrar-welcome h1 { margin: 0; font-size: clamp(1.8rem, 4vw, 2.5rem); }
+.registrar-welcome > p:last-child { margin: 10px 0 0; color: #63766d; }
+
+.registrar-summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.registrar-card { min-height: 125px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; background: #fff; border: 1px solid #e0e9e3; border-radius: 14px; box-shadow: 0 8px 22px rgb(24 52 42 / 4%); }
+.registrar-card span { color: #62776b; font-size: .9rem; }
+.registrar-card strong { color: #17643f; font-size: 2rem; }
+
+.registrar-next-step { margin-top: 24px; padding: 23px 25px; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: #e7f2eb; border: 1px solid #d8e9de; border-radius: 14px; }
+.registrar-next-step h2 { margin: 0; font-size: 1.05rem; }
+.registrar-next-step p { margin: 7px 0 0; color: #5d7167; font-size: .9rem; }
+.registrar-error { margin: 0 0 18px; padding: 13px 15px; color: #8c2f2f; background: #fff0f0; border: 1px solid #f1cece; border-radius: 9px; }
+.registrar-success { margin: 0 0 18px; padding: 13px 15px; color: #195c3a; background: #e9f6ed; border: 1px solid #cfe8d7; border-radius: 9px; }
+.registrar-summary-block, .registrar-form-card { margin-top: 22px; }
+.registrar-summary-block > h2 { margin: 0 0 12px; font-size: 1.15rem; }
+.registrar-summary-grid { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+.registrar-next-step.registrar-form-card { display: block; background: #fff; border-color: #e0e9e3; }
+.registrar-section-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.registrar-section-heading h2, .registrar-retry-card h2 { margin: 0; font-size: 1.12rem; }
+.registrar-section-heading p, .registrar-retry-card p { margin: 7px 0 0; color: #62776b; font-size: .9rem; line-height: 1.5; }
+.registrar-section-heading > a { color: #17643f; font-weight: 700; white-space: nowrap; }
+.registrar-student-form { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
+.registrar-student-form label, .registrar-csv-form label { display: grid; gap: 7px; color: #314c3e; font-size: .88rem; font-weight: 650; }
+.registrar-student-form input, .registrar-student-form select, .registrar-csv-form input[type=file] { width: 100%; min-height: 42px; padding: 9px 10px; color: #233d30; background: #fff; border: 1px solid #cad8ce; border-radius: 8px; font: inherit; }
+.registrar-student-form small, .registrar-csv-form small { color: #6b7c72; font-size: .78rem; font-weight: 400; line-height: 1.45; }
+.registrar-form-submit { grid-column: 1 / -1; }
+.registrar-form-submit button, .registrar-csv-form button, .registrar-preview-actions button, .registrar-retry-card button { min-height: 43px; padding: 10px 16px; color: #fff; background: #17643f; border: 0; border-radius: 8px; font: inherit; font-weight: 700; cursor: pointer; }
+.registrar-form-submit button:disabled, .registrar-preview-actions button:disabled { opacity: .55; cursor: not-allowed; }
+.registrar-csv-form { display: flex; align-items: flex-end; gap: 15px; }
+.registrar-csv-form label { flex: 1; }
+.registrar-id-guide { margin-top: 22px; color: #365443; font-size: .88rem; }
+.registrar-id-guide summary { cursor: pointer; font-weight: 700; }
+.registrar-id-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 12px; }
+.registrar-id-columns h3 { margin: 0 0 8px; font-size: .9rem; }
+.registrar-id-columns ul, .registrar-import-errors { margin: 0; padding-left: 20px; color: #5b7165; font-size: .84rem; line-height: 1.7; }
+.registrar-preview-card { overflow: hidden; }
+.registrar-preview-table-wrap { max-height: 430px; overflow: auto; border: 1px solid #e0e9e3; border-radius: 9px; }
+.registrar-preview-table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+.registrar-preview-table th, .registrar-preview-table td { padding: 9px 11px; text-align: left; border-bottom: 1px solid #e7eee9; vertical-align: top; }
+.registrar-preview-table th { position: sticky; top: 0; background: #f5f8f6; color: #465e50; }
+.registrar-preview-status { display: inline-block; min-width: 72px; }
+.registrar-preview-status.valid { color: #17643f; }
+.registrar-preview-status.duplicate { color: #98651b; }
+.registrar-preview-status.invalid { color: #a34343; }
+.registrar-preview-actions { display: flex; gap: 10px; margin-top: 16px; }
+.registrar-preview-actions form { margin: 0; }
+.registrar-preview-actions .registrar-secondary-button { color: #355543; background: #e7eee9; }
+.registrar-retry-card { flex-wrap: wrap; }
+.registrar-retry-card > div { flex: 1 1 420px; }
+.registrar-retry-card > ul { flex-basis: 100%; margin: 0; padding-left: 20px; color: #526b5d; font-size: .86rem; line-height: 1.7; }
+.registrar-import-errors { margin-top: 16px; color: #8c2f2f; }
+
+@media (max-width: 760px) {
+    .registrar-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .registrar-main { margin: 32px auto; }
+    .registrar-student-form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .registrar-csv-form { align-items: stretch; flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+    .registrar-header { padding: 12px 5vw; align-items: flex-start; }
+    .registrar-header-actions { align-items: flex-end; flex-direction: column; gap: 9px; }
+    .registrar-summary { grid-template-columns: 1fr; }
+    .registrar-next-step { align-items: flex-start; flex-direction: column; }
+    .registrar-student-form, .registrar-id-columns { grid-template-columns: 1fr; }
+    .registrar-form-submit { grid-column: auto; }
+    .registrar-preview-actions, .registrar-preview-actions form, .registrar-preview-actions button { width: 100%; }
+}
